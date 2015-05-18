@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Wine Seller</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+	<script type="text/javascript" src="js/seller.js"></script>
+</head>
+<body>
+<div class="header u-full-width">
+	<h1 class="title center">The Wine Seller</h1>
+</div>
+<div class="u-full-width" id="carousel">
+	<img src="http://placehold.it/1920x300" alt="">
+</div>
+<div class="container">
+	<div class="row body">
+		<nav class="menu center">
+			<ul>
+				<li id="about"   class="menu-item active"><a href="#" onclick="show('about');">About</a></li>
+				<li id="events"  class="menu-item"><a href="#" onclick="show('events');">Events</a></li>
+				<li id="contact" class="menu-item"><a href="#" onclick="show('contact');">Contact</a></li>
+			</ul>
+		</nav>
+		<section class="about active">
+			<div class="container">
+				<div class="row about-1">
+					<div class="five columns" id="map">
+						<img class="u-max-full-width" src="http://placehold.it/300x300" alt="">
+					</div>
+					<div class="two columns">&nbsp;</div>
+					<div class="five columns" id="store-info">
+						<p class="address">
+							106 S Court St <br>
+							Florence, AL 35630
+						</p>
+						<p class="hours">
+							M-W 11a-6p <br>
+							R-F 11a-9p <br>
+							Sat 11a-6p
+						</p>
+					</div>
+				</div>
+				<div class="row about-2">
+					<div class="twelve columns" id="about-blurb">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam architecto commodi, autem in hic quibusdam sint explicabo, laborum, unde soluta nemo praesentium, deserunt modi. Maiores doloremque recusandae, dolorem iusto! Enim!
+						Cumque odio laborum repellendus minima a. Officiis animi itaque, laboriosam praesentium obcaecati officia nisi suscipit, quasi eos beatae rerum vitae magni fugiat perspiciatis ipsam sint eligendi, labore possimus, deleniti. Praesentium.
+						Voluptates dolorum laborum quae minima quo mollitia vitae, deserunt iure distinctio, dolorem consectetur totam suscipit nam tenetur repudiandae alias quos inventore officia possimus magni perspiciatis dolores! Veritatis molestiae doloremque quisquam.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="events hidden">
+			<div class="container">
+				<div class="row">
+					<table class="events-table center">
+						<tr>
+							<td class="event-date">7/4</td>
+							<td class="event-title">Fourth of July Celebration</td>
+						</tr>
+						<tr>
+							<td class="event-date">7/12</td>
+							<td class="event-title">Tasting</td>
+						</tr>
+						<tr>
+							<td class="event-date">7/13</td>
+							<td class="event-title">Game Night</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section class="contact hidden">
+			<div class="container">
+				<form>
+					<div class="row">
+						<div class="six columns">
+							<label for="exampleRecipientInput">Name</label>
+							<input type="text" class="u-full-width" placeholder="John Doe">
+						</div>
+						<div class="six columns">
+							<label for="exampleEmailInput">Your email</label>
+							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+						</div>
+					</div>
+					<label for="exampleMessage">Message</label>
+					<textarea class="u-full-width" placeholder="Hi Dave..." id="exampleMessage"></textarea>
+					<input class="button-primary" type="submit" value="Submit">
+				</form>
+			</div>
+		</section>
+		<div class="signup center">
+			Sign up for our newsletter!
+			<form class="inline" action="">
+				<input type="email" placeholder="john.doe@email.com" />
+				<input type="submit" value="&check;">
+			</form>
+		</div>
+	</div> <!-- /row.body -->
+</div> <!-- /container -->
+</body>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="three columns">&copy; The Wine Seller <span id="copy-year">2015</span></div>
+			<div class="five columns">&nbsp;</div>
+			<div class="four columns">Made by <a href="http://www.thatdarnpat.com">Patrick Lindsay</a></div>
+		</div>
+	</div>
+
+	<script>
+		// Auto-set copyright year
+		document.getElementById('copy-year').innerHTML = new Date().getFullYear();
+	</script>
+</footer>
+</html>

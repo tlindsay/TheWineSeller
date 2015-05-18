@@ -1,0 +1,54 @@
+.center {
+	text-align:center;
+}
+
+.inline {
+	display:inline;
+}
+
+.hidden {
+	/*opacity: 0;*/
+	display:none;
+}
+
+div#carousel {
+	position:relative;
+	overflow:hidden;
+	height: 300px;
+}
+
+div#carousel img {
+	position:absolute;
+	top:-999px;
+	right:-999px;
+	bottom:-999px;
+	left:-999px;
+	margin: auto;
+}
+
+div.header {
+	position: fixed;
+	background-color: white;
+	margin-bottom: 80px;
+	z-index: 999999;
+}
+
+nav.menu li {
+	display:inline-block;
+	list-style: none;
+}
+
+table.events-table {
+	width: 100%;
+}
+
+table.events-table td.event-date {
+	width: 30.6666667%;
+	text-align: right;
+}
+
+table.events-table td.event-title {
+	width: 65.3333333%;
+	margin-left: 0;
+	padding-left: 4%;
+}
