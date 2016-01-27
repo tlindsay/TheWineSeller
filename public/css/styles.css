@@ -44,10 +44,16 @@ table.events-table {
 table.events-table td.event-date {
 	width: 30.6666667%;
 	text-align: right;
+	vertical-align: top;
 }
 
-table.events-table td.event-title {
+table.events-table td.event-info {
 	width: 65.3333333%;
 	margin-left: 0;
-	padding-left: 4%;
+	padding: 8px 10px 0 30px;
+}
+
+table.events-table td.event-info .event-title {
+	font-weight: bold;
+	font-size: 1.25em;
 }

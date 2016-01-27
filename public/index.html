@@ -31,12 +31,14 @@
 			<div class="container">
 				<div class="row about-1">
 					<div class="five columns" id="map">
-						<img class="u-max-full-width" src="http://placehold.it/300x300" alt="">
+						<a href="https://www.google.com/maps/place/Court+Street+Market/@34.8017053,-87.6766226,15z/data=!4m6!1m3!3m2!1s0x0:0x125346b5a17b4290!2sCourt+Street+Market!3m1!1s0x0:0x125346b5a17b4290" target="_blank">
+							<img class="u-max-full-width" src="https://maps.googleapis.com/maps/api/staticmap?center=34.8017053,-87.6766226&markers=218+N+Court+St+Florence+AL+35630&zoom=16&size=300x300&key=AIzaSyDt6Y0FbdLxqb14fII0Bs9pKx21AjDmHow" alt="">
+						</a>
 					</div>
 					<div class="two columns">&nbsp;</div>
 					<div class="five columns" id="store-info">
 						<p class="address">
-							106 S Court St <br>
+							218 N Court St <br>
 							Florence, AL 35630
 						</p>
 						<p class="hours">
@@ -59,37 +61,26 @@
 			<div class="container">
 				<div class="row">
 					<table class="events-table center">
-						<tr>
-							<td class="event-date">7/4</td>
-							<td class="event-title">Fourth of July Celebration</td>
-						</tr>
-						<tr>
-							<td class="event-date">7/12</td>
-							<td class="event-title">Tasting</td>
-						</tr>
-						<tr>
-							<td class="event-date">7/13</td>
-							<td class="event-title">Game Night</td>
-						</tr>
+						
 					</table>
 				</div>
 			</div>
 		</section>
 		<section class="contact hidden">
 			<div class="container">
-				<form>
+				<form id="contact-form">
 					<div class="row">
 						<div class="six columns">
-							<label for="exampleRecipientInput">Name</label>
-							<input type="text" class="u-full-width" placeholder="John Doe">
+							<label for="name">Name</label>
+							<input type="text" name="name" class="u-full-width" placeholder="John Doe">
 						</div>
 						<div class="six columns">
-							<label for="exampleEmailInput">Your email</label>
-							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+							<label for="email">Your email</label>
+							<input class="u-full-width" name="email" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
 						</div>
 					</div>
-					<label for="exampleMessage">Message</label>
-					<textarea class="u-full-width" placeholder="Hi Dave..." id="exampleMessage"></textarea>
+					<label for="message">Message</label>
+					<textarea class="u-full-width" name="message" placeholder="Hi Dave..." id="exampleMessage"></textarea>
 					<input class="button-primary" type="submit" value="Submit">
 				</form>
 			</div>
